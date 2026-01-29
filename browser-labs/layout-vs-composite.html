@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout vs Paint vs Composite</title>
+    <style>
+      body { font-family: Arial, sans-serif; padding: 16px; }
+      .controls { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
+      .grid { display: grid; grid-template-columns: repeat(20, 20px); gap: 4px; }
+      .box { width: 20px; height: 20px; background: #7aa5d2; }
+      .box.alt { background: #e07055; }
+      .note { margin-top: 12px; color: #555; }
+    </style>
+  </head>
+  <body>
+    <h1>Layout vs Paint vs Composite</h1>
+    <div class="controls">
+      <button id="btn-left">Анимация: left/top</button>
+      <button id="btn-transform">Анимация: transform</button>
+      <button id="btn-size">Анимация: width/height</button>
+      <button id="btn-opacity">Анимация: opacity</button>
+      <button id="btn-stop">Стоп</button>
+    </div>
+    <div class="grid" id="grid"></div>
+    <p class="note">Открой DevTools → Performance, запиши профиль и сравни.</p>
+
+    <script src="/layout-vs-composite.js"></script>
+  </body>
+</html>

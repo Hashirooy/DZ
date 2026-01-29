@@ -1,0 +1,55 @@
+/* Имитируем "тяжелый" CSS: много селекторов и правил */
+body { background: #f7f7f7; color: #222; font-family: Arial, sans-serif; }
+.container { max-width: 800px; margin: 0 auto; }
+
+/* Сгенерированные правила для нагрузки */
+.box-1 { padding: 4px; }
+.box-2 { padding: 5px; }
+.box-3 { padding: 6px; }
+.box-4 { padding: 7px; }
+.box-5 { padding: 8px; }
+.box-6 { padding: 9px; }
+.box-7 { padding: 10px; }
+.box-8 { padding: 11px; }
+.box-9 { padding: 12px; }
+.box-10 { padding: 13px; }
+.box-11 { padding: 14px; }
+.box-12 { padding: 15px; }
+.box-13 { padding: 16px; }
+.box-14 { padding: 17px; }
+.box-15 { padding: 18px; }
+.box-16 { padding: 19px; }
+.box-17 { padding: 20px; }
+.box-18 { padding: 21px; }
+.box-19 { padding: 22px; }
+.box-20 { padding: 23px; }
+.box-21 { padding: 24px; }
+.box-22 { padding: 25px; }
+.box-23 { padding: 26px; }
+.box-24 { padding: 27px; }
+.box-25 { padding: 28px; }
+.box-26 { padding: 29px; }
+.box-27 { padding: 30px; }
+.box-28 { padding: 31px; }
+.box-29 { padding: 32px; }
+.box-30 { padding: 33px; }
+.box-31 { padding: 34px; }
+.box-32 { padding: 35px; }
+.box-33 { padding: 36px; }
+.box-34 { padding: 37px; }
+.box-35 { padding: 38px; }
+.box-36 { padding: 39px; }
+.box-37 { padding: 40px; }
+.box-38 { padding: 41px; }
+.box-39 { padding: 42px; }
+.box-40 { padding: 43px; }
+.box-41 { padding: 44px; }
+.box-42 { padding: 45px; }
+.box-43 { padding: 46px; }
+.box-44 { padding: 47px; }
+.box-45 { padding: 48px; }
+.box-46 { padding: 49px; }
+.box-47 { padding: 50px; }
+.box-48 { padding: 51px; }
+.box-49 { padding: 52px; }
+.box-50 { padding: 53px; }

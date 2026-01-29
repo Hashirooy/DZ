@@ -1,0 +1,20 @@
+{
+  "name": "js-browser-eventloop-react-training",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "react-miniapp"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "js": "node js-labs/run.mjs",
+    "event-loop": "node event-loop-labs/run.mjs",
+    "browser": "node browser-labs/run.mjs",
+    "react": "npm --workspace react-miniapp run dev"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

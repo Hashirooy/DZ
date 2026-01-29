@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap');
+
+:root {
+  --bg: #f6f2ea;
+  --ink: #1c1c1c;
+  --accent: #f28c28;
+  --accent-2: #2a7f62;
+  --card: #fffdf8;
+  --muted: #6b6b6b;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Space Grotesk', sans-serif;
+  background: radial-gradient(1200px 600px at 10% 0%, #fde3c7 0%, transparent 60%),
+              radial-gradient(1200px 600px at 90% 20%, #c8ead8 0%, transparent 55%),
+              var(--bg);
+  color: var(--ink);
+}
+
+.app {
+  max-width: 900px;
+  margin: 32px auto;
+  padding: 24px;
+  background: var(--card);
+  border: 2px solid var(--ink);
+  box-shadow: 12px 12px 0 var(--ink);
+}
+
+h1 {
+  margin: 0 0 16px;
+  font-size: 32px;
+}
+
+.subtitle {
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+
+.row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+input[type="text"] {
+  padding: 10px 12px;
+  border: 2px solid var(--ink);
+  font-size: 14px;
+  min-width: 240px;
+}
+
+button {
+  padding: 8px 12px;
+  border: 2px solid var(--ink);
+  background: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button.primary {
+  background: var(--accent);
+}
+
+button.ghost {
+  background: transparent;
+}
+
+.todo-list {
+  margin-top: 16px;
+  display: grid;
+  gap: 8px;
+}
+
+.todo-item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 8px;
+  align-items: center;
+  border: 2px solid var(--ink);
+  padding: 8px 10px;
+  background: #fff;
+}
+
+.todo-item.done {
+  opacity: 0.6;
+  text-decoration: line-through;
+}
+
+.badge {
+  font-family: 'IBM Plex Mono', monospace;
+  padding: 2px 6px;
+  border: 1px solid var(--ink);
+  background: #fff;
+}
+
+.section {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 2px dashed var(--ink);
+}
+
+.counter {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+}
+
+code {
+  font-family: 'IBM Plex Mono', monospace;
+  background: #f2efe9;
+  padding: 2px 4px;
+}
