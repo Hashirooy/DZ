@@ -6,11 +6,11 @@ import CorsProbe from './labs/CorsProbe.jsx';
 const STORAGE_KEY = 'todo-lab-v1';
 
 const SHOW_EFFECT_LOOP = false; // TODO: включи для задачи про useEffect
-const SHOW_CORS_PROBE = false; // TODO: включи для CORS через Vite proxy
+const SHOW_CORS_PROBE = true; // TODO: включи для CORS через Vite proxy
 
 /*
 STUDENT NOTES (для задачи про поиск)
-- Что я ожидал
+- Что я ожидал исправится ошибка, без прокси было 200, с проксти 500 ошибка
 - Что произошло
 - Почему это произошло (моими словами)
 - Где это важно в реальных проектах

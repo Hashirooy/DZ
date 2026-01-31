@@ -16,7 +16,8 @@ async function runFetch() {
       method: 'GET',
       headers: {
         'X-Client': 'cors-lab'
-      }
+      },
+      mode:'no-cors'
       // TODO: попробуй mode: 'no-cors' и посмотри, что такое opaque response
     });
 

@@ -42,6 +42,7 @@ function animate(type) {
         box.style.top = `${local}px`;
       } else if (type === 'transform') {
         // TODO: добавь will-change: transform в CSS и сравни
+        box.style.wiillChange = 'transform';
         box.style.transform = `translate(${local}px, ${local}px)`;
       } else if (type === 'size') {
         box.style.width = `${20 + local}px`;
