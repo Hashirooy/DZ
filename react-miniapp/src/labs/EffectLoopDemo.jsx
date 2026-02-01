@@ -16,7 +16,7 @@ export default function EffectLoopDemo() {
     // Подсказка: либо убери setTick, либо измени зависимости,
     // либо добавь условие остановки.
     setTick(tick + 1);
-  }, [tick]);
+  }, []);
 
   return (
     <div className="counter">

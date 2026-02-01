@@ -5,7 +5,7 @@ import CorsProbe from './labs/CorsProbe.jsx';
 
 const STORAGE_KEY = 'todo-lab-v1';
 
-const SHOW_EFFECT_LOOP = false; // TODO: включи для задачи про useEffect
+const SHOW_EFFECT_LOOP = true; // TODO: включи для задачи про useEffect
 const SHOW_CORS_PROBE = true; // TODO: включи для CORS через Vite proxy
 
 /*
@@ -47,7 +47,7 @@ export default function App() {
         (filter === 'done' && t.done);
 
       // TODO: сделай поиск без учета регистра
-      const matchesSearch = term === '' || t.title.includes(term);
+      const matchesSearch = term === '' || t.title.toLowerCase().includes(term.toLowerCase());
 
       return matchesFilter && matchesSearch;
     });

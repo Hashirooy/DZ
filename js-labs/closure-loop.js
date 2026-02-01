@@ -8,7 +8,7 @@ STUDENT NOTES
 
 const root = document.getElementById('buttons');
 
-for (var i = 0; i < 5; i += 1) {
+for (let i = 0; i < 5; i += 1) {
   const btn = document.createElement('button');
   btn.textContent = `Кнопка ${i}`;
   btn.addEventListener('click', () => {

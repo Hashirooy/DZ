@@ -20,7 +20,7 @@ const looseAdd = cart.add; // потеря this
 
 setTimeout(() => {
   try {
-    looseAdd(); // TypeError: this === undefined
+    looseAdd.bind(cart)(); // TypeError: this === undefined
   } catch (err) {
     console.error('Ошибка из-за потерянного this:', err.message);
   }

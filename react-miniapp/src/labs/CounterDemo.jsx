@@ -13,8 +13,8 @@ export default function CounterDemo() {
 
   const incrementTwice = () => {
     // TODO: замени на функциональные апдейты, чтобы +2 работало стабильно
-    setCount(count + 1);
-    setCount(count + 1);
+    setCount(prevCount => prevCount + 1);
+    setCount(prevCount => prevCount + 1);
   };
 
   return (

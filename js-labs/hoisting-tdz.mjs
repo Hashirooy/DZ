@@ -8,12 +8,13 @@ STUDENT NOTES
 
 console.log('Запуск приложения...');
 
-init();
-
 const config = {
   apiBase: 'https://api.example.com',
   retry: 3
 };
+
+init();
+
 
 function init() {
   // TODO: исправь TDZ, чтобы init использовал config после инициализации.

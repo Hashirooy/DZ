@@ -30,4 +30,7 @@ const b2 = new UserClass('B');
 console.log('UserFn say equality:', a1.say === a2.say);
 console.log('UserClass say equality:', b1.say === b2.say);
 
+
 // TODO: добавь вывод размеров/ссылок и объясни, где это влияет на память.
+console.log('a1.say === UserFn.prototype.say', a1.say === UserFn.prototype?.say);
+console.log('b1.say === UserClass.prototype.say', b1.say === UserClass.prototype.say);
