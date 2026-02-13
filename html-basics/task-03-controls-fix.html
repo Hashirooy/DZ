@@ -1,0 +1,32 @@
+<!--
+Задача: исправь поведение разметки в рамках темы файла.
+Критерии приемки:
+1) действие «подписаться» доступно с клавиатуры: элемент получает фокус по Tab и активируется Enter/Space;
+2) подпись поля связана с input: клик по тексту "Email" переводит курсор в поле;
+3) порядок фокуса логичный: сначала действие, затем поле ввода;
+4) у сфокусированных элементов есть видимый фокус-индикатор.
+Ограничение: не переписывай весь файл, вноси точечные правки.
+-->
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fix: доступность формы</title>
+    <style>
+      *:focus {
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Подписка на обновления</h1>
+
+    <button onclick="console.log('subscribe')">Подписаться</button>
+
+    <div>
+      <label for="email">Email</label>
+      <input id="email" type="email" placeholder="name@example.com" />
+    </div>
+  </body>
+</html>

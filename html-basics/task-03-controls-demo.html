@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo: button vs div</title>
+    <style>
+      .pseudo-button {
+        display: inline-block;
+        padding: 8px 12px;
+        border: 1px solid #222;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Проверь поведение с клавиатуры</h1>
+    <p>Сначала нажимай Tab, потом Enter/Space на каждом элементе.</p>
+
+    <div class="pseudo-button" onclick="console.log('div clicked')">Отправить (div)</div>
+    <button type="button" onclick="console.log('button clicked')">Отправить (button)</button>
+
+    <p>
+      <label for="email">Email</label>
+      <input id="email" type="email" placeholder="name@example.com" />
+    </p>
+  </body>
+</html>
