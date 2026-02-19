@@ -7,7 +7,7 @@ console.log("=== Task 13 Demo ===");
 
 const sum = 0.1 + 0.2;
 console.log("0.1 + 0.2:", sum);
-console.log("sum === 0.3:", sum === 0.3);
+console.log("sum === 0.3:", sum === 0.3); 
 
 const a = [1, 2, 3];
 const b = [1, 2, 3];

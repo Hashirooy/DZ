@@ -16,12 +16,11 @@ function collectPositive(numbers) {
   const collected = [];
 
   for (let i = 0; i < numbers.length; i += 1) {
+     if (numbers[i] === 0) {
+      break;
+    }
     if (numbers[i] <= 0) {
       continue;
-    }
-
-    if (numbers[i] === 0) {
-      break;
     }
 
     collected.push(numbers[i]);

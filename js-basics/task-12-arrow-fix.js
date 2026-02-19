@@ -17,7 +17,7 @@ const counter = {
     this.value += 1;
   },
   incrementLater() {
-    setTimeout(function () {
+    setTimeout( () => {
       this.value += 1;
       console.log("inside timeout:", this.value);
     }, 10);

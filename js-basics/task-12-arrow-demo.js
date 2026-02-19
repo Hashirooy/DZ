@@ -20,6 +20,6 @@ const dashboard = {
   },
 };
 
-dashboard.regular();
-dashboard.arrow();
-dashboard.showLater();
+dashboard.regular();// выводит "Week 1", потому что this указывает на dashboard
+dashboard.arrow(); // не выводит "Week 1", потому что this указывает на глобальный объект, а не на dashboard
+dashboard.showLater(); // выводит "Week 1", потому что стрелочная функция внутри setTimeout наследует this от showLater, который указывает на dashboard

@@ -12,11 +12,11 @@
 */
 
 const createUserCard = function (name, role = "student") {
-  `${name} — ${role}`;
+  return `${name} — ${role}`;
 };
 
 function applyFormatter(name, formatter) {
-  formatter(name);
+  return formatter(name);
 }
 
 function toUpperLabel(value) {
